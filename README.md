@@ -1,2 +1,4 @@
-# nikkal
-Nikkal website. A service for growing vegetable gardens
+# Nikkal
+Nikkal is an interface to request vegetable garden installation
+
+Visit the site at [www.nikkal.org](http://www.nikkal.org)
