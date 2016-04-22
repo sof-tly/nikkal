@@ -12,3 +12,17 @@ p.vc_custom_heading {
     margin-top: 3em;
     margin-bottom: 6em;
 }
+
+.sc_icon {
+    display: inline-block;
+    width: 80px;
+    min-height: 120px;
+}
+
+/** about us profile images */
+@media (max-width: 767px) and (min-width: 480px) {
+	.sc_team .row:not(.columns_fluid)>[class*="column-"], 
+	.sc_team .columns_wrap:not(.columns_fluid)>[class*="column-"] {
+	    width: 100% !important;
+	}
+}
