@@ -3149,6 +3149,28 @@ AND YOUR CUSTOMERS</h3></div>
             }
         } catch (e) {}
     })(document); /* ]]> */
+
+    // Load ShareToChat
+    var chat_url = (window.location.href.indexOf('localhost') > -1) 
+        ? 'http://localhost/heroku/sharetochat-ui/' : 'https://sharetochat.com/'
+    jQuery.getScript(chat_url + 'js/sharetochat.min.js', function() {
+        var opts = {
+            hashtag: '#nikkal.org',
+            fonts: true,
+            css: true,
+            icons: true,
+            url: chat_url,
+            active_tab: 'online', // online | messages | account
+            lang_online_tab: 'Amigos',
+            lang_messages_tab: 'Chat Nikkal',
+            lang_message_placeholder: 'Escribe un mensaje...'
+        }
+        ShareToChat(opts).loadChat(function() {
+            console.log('Loaded sharetochat')
+            this.returnToLastOpenState(true)
+        })
+    })
+
     </script>
 </body>
 
