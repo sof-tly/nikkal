@@ -14,7 +14,7 @@ gulp.task('minify-css', function() {
         .pipe(rename({ suffix: '.min'}))
         .pipe(sourcemaps.init())
         .pipe(cleanCSS({relativeTo: './', processImport: true }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('../sourcemaps'))
         .pipe(gulp.dest('dist/css'))
         .pipe(livereload())
         .pipe(notify({ message: 'CSS minified. Site reloaded.', onLast: true }))
@@ -36,5 +36,5 @@ gulp.task('reload', function() {
 gulp.task('watch', function() {
     livereload.listen();
     gulp.watch(['css/*.css'], ['minify-css'])
-    gulp.watch(['**'], ['reload'])
+    gulp.watch(['index.html', '**/*.html'], ['reload'])
 });
