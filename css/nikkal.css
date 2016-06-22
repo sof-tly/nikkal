@@ -2,6 +2,9 @@
  * Nikkal css
  */
 
+.top_panel_wrap .contact_logo {
+	float: left;
+}
 
 .column-1_3, .column-2_6, .column-3_9, .column-4_12 {
 	width: 33%;
@@ -25,4 +28,20 @@ p.vc_custom_heading {
 	.sc_team .columns_wrap:not(.columns_fluid)>[class*="column-"] {
 	    width: 100% !important;
 	}
+}
+
+/** contact circle at bottom of home and about */
+.contact-circle-btn {
+    height: 80px;
+    display: block;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: calc(50% - 40px);
+    background: #000;
+}
+
+.contact-circle-btn > i {
+    line-height: 80px;
+    font-size: 30px;
+    color: #fff;
 }

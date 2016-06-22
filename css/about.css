@@ -1,0 +1,21 @@
+#page-about .logo_main {
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    margin-left: calc(50% - 150px);
+}
+
+#page-about .top_panel_middle .logo {
+	margin-bottom: 0;
+}
+
+#page-about .top_panel_middle .logo > a {
+	overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+#page-about .top_panel_wrap .contact_logo {
+	width: 100%;
+}
