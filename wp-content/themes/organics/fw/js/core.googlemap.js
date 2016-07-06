@@ -36,6 +36,8 @@ function organics_googlemap_init(dom_obj, coords) {
 function organics_googlemap_create(id) {
 	"use strict";
 
+	debugger
+
 	// Create map
 	ORGANICS_GLOBALS['googlemap_init_obj'][id].map = new google.maps.Map(ORGANICS_GLOBALS['googlemap_init_obj'][id].dom, ORGANICS_GLOBALS['googlemap_init_obj'][id].opt);
 
